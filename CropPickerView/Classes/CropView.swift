@@ -173,7 +173,7 @@ public class CropView: UIView {
         
         addConstraint(NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: bottomLineView, attribute: .leading, multiplier: 1, constant: margin).priority(950))
         addConstraint(NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: bottomLineView, attribute: .trailing, multiplier: 1, constant: margin).priority(950))
-        addConstraint(NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: bottomLineView, attribute: .top, multiplier: 1, constant: margin).priority(950))
+        addConstraint(NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: bottomLineView, attribute: .bottom, multiplier: 1, constant: margin).priority(950))
         bottomLineView.addConstraint(NSLayoutConstraint(item: bottomLineView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: lineSize).priority(950))
         
         addConstraint(NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: rightLineView, attribute: .trailing, multiplier: 1, constant: margin).priority(950))
